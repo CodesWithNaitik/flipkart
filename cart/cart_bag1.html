@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart</title>
+        <style>
+          html{
+    height:100%
+}
+section{
+    /* display: inline-block; */
+    margin: 5px 5px;
+    padding: 5px;
+    /* vertical-align: middle; */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 2px rgba(0,0,0,0.5);
+
+}
+body{
+    color: #fff;
+    font-size: 16px;
+    background-image: url("../3.jpg");
+    background-size:cover;
+    background-position: 50% 0;
+    height: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+body:before{
+    content: '';
+    /* display: inline-block; */
+    vertical-align: middle;
+    height: 100%;
+}
+.bod{
+    color: #fff;
+    font-size: 16px;
+    /* background-color: red; */
+    background-size:cover;
+    /* background-position: 50% 0; */
+    /* height: 100%; */
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+.bod:before{
+    /* content: ''; */
+    /* display: inline-block; */
+    /* vertical-align: middle;
+    height: 100%; */
+}
+          .grip {
+            grid-template-columns: 30% 70%;
+            display: grid;
+            border: 2px solid black;
+            /* margin-right: 2px; */
+            grid-template-rows: max-content;
+            /* margin-bottom: 10px; */
+          }
+      
+          .imgg {
+            /* height: 300px; */
+          }
+      
+          .bordr {
+            /* color: red; */
+            border-right: 2px solid black;
+          }
+      
+          .img-fluid {
+            max-height: 100%;
+            max-width: 100%;
+            min-height: 100%;
+          }
+      .grip2{
+        display: grid;
+        color: white;
+        grid-template-rows:10% 65% 10% 15% ;
+      }
+      .texrt{
+        justify-content: center;
+        font-weight: 400; 
+        font-size: 1rem; 
+        padding: 1rem;
+        margin: auto auto;
+      }
+          @media(max-width :640px){
+          .texrt{ 
+            font-size: 15px;
+            font-weight: 100px;
+          }
+          } 
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+      </head>
+<body><section class="bod"><div id="cart" class="bod"></div></section>
+    
+    <div id="bag1" style="display: none;"></div>
+    <div id="bag2" style="display: none;"></div>
+    <div id="bag3" style="display: none;"></div>
+    <div id="bag4" style="display: none;"></div>
+    <div id="bag5" style="display: none;"></div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="../dist/jquery.ripples.js"></script>
+      <script>
+          $('body').ripples({
+              resolution: 510,
+              dropRadius: 5, 
+              perturbance: 0.02,
+          });
+          setInterval(function () {
+              var $el = $('body');
+              var x = Math.random() * $el.outerWidth();
+              var y = Math.random() * $el.outerHeight();
+              var dropRadius = 5;
+              var strength = 0.02 + Math.random() * 0.04;
+  
+              $el.ripples('drop', x, y, dropRadius, strength);
+          }, 400);
+          $(".dele").click(function(){
+            alert("This will be avalaible in next update \nThankyou For Coming ")
+          })
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!-- <!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  font-size: 60px;
+
+}
+</style>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 11, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    .swiper-slide{
+      /* width: 10px; */
+    }
+.custom{
+   height: 500px;
+   padding: 0px 0px;
+   margin: 0px 0px
+}
+.custom1{
+   height: 500px;
+   padding: 0px 0px;
+   margin: 0px 0px
+}
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      padding: 0px 0px;
+   margin: 0px 0px
+    }
+
+    .swiper-slide {
+      margin: 0px 0px;
+      padding: 0px 0px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      width: auto;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .img12{
+      width: 300px;
+    }
+    .custom1{
+      width:200px;
+    }
+  </style>
+ <style> 
+    body{
+        background-color: #fff;
+    }
+    
+
+    .checked {
+        color: orange;
+    }
+
+    .mflex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        text-align: left;
+        width: 6rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .left2 {
+        font-weight: 500;
+    }
+
+    .not {
+        list-style: none;
+        margin-right: 2rem;
+    }
+
+    .bro {
+        margin-bottom: 1rem;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        padding: 12px 16px;
+    }
+
+    .zoom:hover {
+        transition: transform 0.6s;
+        transform: scale(1.5);
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: auto;
+        background-color: #ffffff;
+        padding: 1rem 1rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #place {
+        width: 15rem;
+        height: 2rem;
+    }
+</style> -->
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="custom">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <table>
+                    <tr>
+                        <th class="th12"><img class="zoom img12" src="bag1.png"
+                                style="margin: 0px 0px; padding: 0px 0px;"></th>
+                        <th class="th12"><img class="zoom img12" src="bag5.png"
+                                style="margin: 0px 0px; padding: 0px 0px;"></th>
+                        <th class="th12"><img class="zoom img12" src="bag2.png"
+                                style="margin: 0px 0px; padding: 0px 0px;"></th>
+                        <th class="th12"><img class="zoom img12" src="bag4.png"
+                                style="margin: 0px 0px; padding: 0px 0px;"></th>
+                        <th class="th12"><img class="zoom img12" src="bag3.png"
+                                style="margin: 0px 0px; padding: 0px 0px;"></th>
+                        <th class="th12"><img class="zoom img12" src="bag1.png"
+                                style="margin: 0px 0px; padding: 0px 0px;"></th>
+                        <th class="th12"><img class="zoom img12" src="bag5.png"
+                                style="margin: 0px 0px; padding: 0px 0px;"></th>
+                        <th class="th12"><img class="zoom img12 " src="bag2.png"
+                                style="margin: 0px 0px; padding: 0px 0px;"></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="swiper-slide">Price: <del>1000</del> 500 Rs.</div>
+                        </th>
+                        <th>
+                            <div class="swiper-slide">Price: <del>1000</del> 500 Rs.</div>
+                        </th>
+                        <th>
+                            <div class="swiper-slide">Price: <del>1000</del> 500 Rs.</div>
+                        </th>
+                        <th>
+                            <div class="swiper-slide">Price: <del>1000</del> 500 Rs.</div>
+                        </th>
+                        <th>
+                            <div class="swiper-slide">Price: <del>1000</del> 500 Rs.</div>
+                        </th>
+                        <th>
+                            <div class="swiper-slide">Price: <del>1000</del> 500 Rs.</div>
+                        </th>
+                        <th>
+                            <div class="swiper-slide">Price: <del>1000</del> 500 Rs.</div>
+                        </th>
+                        <th>
+                            <div class="swiper-slide">Price: <del>1000</del> 500 Rs.</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                        </th>
+                        <th>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                        </th>
+                        <th>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                        </th>
+                        <th>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                        </th>
+                        <th>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                        </th>
+                        <th>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                        </th>
+                        <th>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            
+                        </th>
+                        <th>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            
+                        </th>
+                    </tr>
+                    <tr><th style="width: 100%; text-align: center; margin: auto;"><div class="swiper-pagination"></div></th></tr>
+                </table>
+            </div>
+
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div> 
+
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
